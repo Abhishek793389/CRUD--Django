@@ -1,0 +1,64 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Crud Project</title>
+    <link rel="stylesheet" href="{% static 'css/stylemaster.css' %}"
+</head>
+<body>
+<center>
+    <nav>
+        <ul>
+            <li><a href="{% url 'master' %}">Home</a></li>
+            <li><a href="{% url 'home' %}">Data</a></li>
+            <li><a href="{% url 'add' %}">Add New User</a></li>
+            <li class="profile"><a href=https://www.linkedin.com/in/abhishek-kumar-3bb447223>Abhishek-Linkedin</a></li>
+            
+        </ul>
+       
+    </nav>
+   
+  </center>
+ 
+
+  {% block content %}
+
+ 
+  <div class="container">
+    <div class="crud">
+    
+
+    <h1>Crud Project</h1>
+    <h3>User Management System</h3>
+
+    <p><strong>Discription : </strong>The User Management System is a web application designed to provide a seamless experience for managing user data. Built using the Django framework, this project implements the fundamental Create, Read, Update, and Delete (CRUD) operations, allowing users to interact with the database effectively.
+    </p>
+    <p><strong>Key features :</strong></p>
+    <ul>
+      <li><p><strong>User Registration : </strong>Users can create new accounts by providing their details through a registration form. The information is securely stored in a MySQL database, ensuring data integrity and user confidentiality.</p></li>
+      <li><p><strong>User Profile : </strong>Each registered user has a unique profile that displays their information, such as full name, mobile number, date of birth, and address. Users can view their profiles at any time.</p></li>
+      <li><p><strong>Data Manipulation : </strong>Users have the ability to : <ul>
+        <li><strong>Create : </strong>Add new user records via the registration form.</li>
+        <li><strong>Read : </strong>View all existing user profiles and their details.</li>
+        <li><strong>Update : </strong>Edit user information to keep records up to date, such as changing contact details or updating addresses.</li>
+        <li><strong>Delete : </strong>Remove user records when they are no longer needed, ensuring the database is clean and relevant.</li>
+      </ul>
+      </p></li>
+    </ul>
+    <p><strong>Conclusion : </strong>The User Management System serves as an excellent demonstration of my ability to develop web applications with robust data handling capabilities. It showcases my skills in Django, Python and database management. I am excited to continue enhancing this project with new features and improvements.</p>
+    </div>
+  </div>
+
+  {% endblock %}
+ 
+
+
+  <nav>
+  <footer>
+    <p>© 2024 CRUD operations by Abhishek Kumar.</p>
+  </footer></nav>
+
+</body>
+</html>

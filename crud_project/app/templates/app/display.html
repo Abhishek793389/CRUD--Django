@@ -1,0 +1,56 @@
+
+{% extends 'app/master.html' %}
+{% load static %}
+
+  {% block title %}Display{% endblock %}
+  
+  
+
+{% block content %}
+<link rel="stylesheet" href="{% static 'css/styledisplay.css' %}">
+
+  <h2>Submitted Data</h2> 
+
+  {% for message in messages %}
+    <span> <center>{{message}}</center></span>
+  {% endfor %}
+
+  <table  cellspacing="2" cellpadding="3" class="tb" align="center">
+    <tr class="tr">
+        <th>Employee ID </th>
+        <th>Employee Name </th>
+        <th>Employee Mobile </th>
+        <th>Employee Email </th>
+        <th>Employee Password </th>
+        <th>Employee DOB </th>
+        <th>Employee Address </th>
+        <th>Employee Department </th>
+        <th>Action</th>
+      </tr>
+      {% for employee in emp %}
+    <tr class="tr2">
+      <td>{{ employee.emp_id }}</td>
+      <td>{{ employee.emp_name }}</td>
+      <td>{{ employee.emp_mob }}</td>
+      <td>{{ employee.emp_email }}</td>
+      <td>{{ employee.emp_paw }}</td>
+      <td>{{ employee.emp_dob }}</td>
+      <td>{{ employee.emp_address}}</td>
+      <td>{{ employee.emp_dept}}</td>
+      <td class="act">
+        
+        
+        <form action="{% url 'delete' employee.id %}" method="POST">
+          {% csrf_token %}
+        <input class='btn2' type="submit" value="Delete">
+        </form>
+
+        <button type="edit" value="Update" ><a class="btn1" href="{% url 'update' employee.id%}">Update</a>
+        
+      
+      </td>
+    </tr>
+    {% endfor %}
+  </table>
+
+{% endblock %}

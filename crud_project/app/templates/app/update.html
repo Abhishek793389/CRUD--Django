@@ -1,0 +1,19 @@
+{% extends 'app/master.html' %}
+{% load static %}
+  {% block title %} Update User {% endblock %}
+{% block content %}
+<link rel="stylesheet" href="{% static 'css/update.css' %}">
+
+<div class="container">
+  <div class="regform">
+  <h2>Update Data</h2>
+  <form action="" method="POST">
+    {% csrf_token %}
+    {{form.as_p}}
+
+    <input class='btn' type="submit" value="Update">
+  </form>
+    </div>
+  </div>
+
+{% endblock %}
