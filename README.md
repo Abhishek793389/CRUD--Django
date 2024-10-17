@@ -8,3 +8,6 @@ Ensure you have the following installed:
 - Django5.1
 - MySQL Database
 - VS-Code
+
+## step1 = create your project
+- django-admin startproject 'your project name'
