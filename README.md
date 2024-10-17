@@ -2,7 +2,7 @@
 This is a Django-based CRUD (Create, Read, Update, Delete) project designed to demonstrate the essential operations on database records, such as adding, viewing, editing, and deleting entries. This project uses MySQL as the database and provides a simple user interface with additional functionalities such as login, signup, and logout.
 
 # you can check it by live link here :
-# Live link :[https://lnkd.in/ggsWD6kN]
+# Live link :[https://aryan793389.pythonanywhere.com/]
 # Prerequisites
 Ensure you have the following installed:
 
