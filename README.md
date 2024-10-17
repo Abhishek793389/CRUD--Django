@@ -4,8 +4,7 @@ This is a Django-based CRUD (Create, Read, Update, Delete) project designed to d
 # Prerequisites
 Ensure you have the following installed:
 
-Python 3.x	Django5.1
-
-
+Python 3.x
+Django5.1
 MySQL Database
 VS-Code
